@@ -30,4 +30,30 @@ App::uses('Controller', 'Controller');
  * @link		http://book.cakephp.org/2.0/en/controllers.html#the-app-controller
  */
 class AppController extends Controller {
+
+	public $components = array(
+        'Session',
+        'Auth' => array(
+            'loginRedirect' => array('controller' => 'index', 'action' => 'index'),
+            'logoutRedirect' => array('controller' => 'users', 'action' => 'login'),
+            'loginError' => "<div class='alert alert-danger'>Usuário e/ou senha incorreto(s)</div>",
+            'authError' => "<div class='alert alert-warning'>Você precisa estar <b>autenticado</b> para acessar esta página</div>",
+            'authorize' => array('Controller') // Adicionamos essa linha
+        )
+    );
+
+    public function beforeFilter() {
+        
+         if (AuthComponent::user()){
+         }
+
+    }
+    
+    public function isAuthorized($user) {
+        if (isset($user['role']) && $user['role'] === 'user') {            
+                return true;                
+        }
+        return false; // O resto não pode
+    }
+
 }

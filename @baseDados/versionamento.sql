@@ -7,6 +7,8 @@
 -- Criação da database 'deninciew3project';
 CREATE DATABASE IF NOT EXISTS denunciew3project;
 
+USE denunciew3project;
+
 -- Tabela Users (convenção)
 CREATE TABLE IF NOT EXISTS  `users` (
   `id` INT NOT NULL AUTO_INCREMENT,

@@ -132,6 +132,83 @@ body{
 	border-bottom: 2px solid #d1d1d1;
 }
 
+.boxDenuncia{
+	width: 200px;
+	height: 250px;
+	overflow: hidden;
+	background: #F1EFE2;
+	box-shadow: 2px 2px 0px #C0C0C0;
+	border-radius: 3px;
+	float: left;
+	margin: 0px 22px 15px 22px;
+	padding: 10px;
+	position: relative;
+}
+
+.boxDenuncia h2{
+	text-align: center;
+	color: #2a4256;
+	font-size: 22px;
+	text-shadow: 1px 1px 0px #fff;
+}
+
+.boxDenuncia p{
+	text-align: center;
+	color:#333;
+	font-size: 11px;
+}
+
+.hack{
+	clear: both;
+}
+
+.apoiar{
+	width: 80px;
+	height: 80px;
+	border-radius: 80px;
+	background: #2a4256;
+	line-height: 80px;
+	color: #fff;
+	text-transform: uppercase;
+	text-align: center;
+	font-size: 17px;
+	position: absolute;
+	bottom: 5px;
+	right: 15px;
+}
+
+.saibamais{
+	width: 80px;
+	height: 80px;
+	border-radius: 80px;
+	background: #669966;
+	line-height: 80px;
+	color: #fff;
+	text-transform: uppercase;
+	text-align: center;
+	font-size: 40px;
+	position: absolute;
+	bottom: 5px;
+	left: 15px;
+}
+
+.apoiar a{
+	display: inline-block;
+	text-decoration: none;
+	color: #fff;
+	width: 80px;
+	height: 80px;
+}
+
+.saibamais a{
+	display: inline-block;
+	text-decoration: none;
+	color: #fff;
+	width: 80px;
+	height: 80px;
+}
+
+
 /* Footer Styles */
 
 #footer{

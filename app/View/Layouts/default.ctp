@@ -63,7 +63,8 @@ $templateDescription = __d('developer', 'Denuncie App - Powered CakePHP');
 		<div id='user-logged-bar'>
 			<p> 
 				Seja bem vindo (a) <?= AuthComponent::user('username'); ?> &nbsp; |
-				<?= $this->Html->link('Minhas Denúncias', array('controller' => 'denuncias', 'action' => 'index')); ?>
+				<?= $this->Html->link('Minhas Denúncias', array('controller' => 'denuncias', 'action' => 'all')); ?>
+				| <?= $this->Html->link('Denunciar', array('controller' => 'denuncias', 'action' => 'add')); ?>
 			</p>
 		</div>
 	<?php } ?>

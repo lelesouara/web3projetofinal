@@ -41,7 +41,3 @@
 		</td>
 	</tr>
 </table>
-
-<div class="page-header">
-  <h1>Comentarios <small> Saiba os outros andam falando. </small></h1>
-</div>

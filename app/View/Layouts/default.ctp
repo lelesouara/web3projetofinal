@@ -26,6 +26,7 @@ $templateDescription = __d('developer', 'Denuncie App - Powered CakePHP');
 
 		echo $this->Html->css('bootstrap.min');
 		echo $this->Html->script('bootstrap.min');
+		echo $this->Html->script('jquery-1.10.2.min');
 		echo $this->Html->css('estilo');
 
 		echo $this->fetch('meta');

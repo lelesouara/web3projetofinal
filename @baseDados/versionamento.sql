@@ -55,3 +55,12 @@ CREATE TABLE IF NOT EXISTS `denuncias_tags` (
 	FOREIGN KEY (tag_id) REFERENCES tags(id),
 	PRIMARY KEY(id)
 );
+
+-- rankings
+CREATE TABLE IF NOT EXISTS `rankings` (
+	id 	INT NOT NULL AUTO_INCREMENT,
+	denuncia_id INT NOT NULL,
+	qtdapoios INT NOT NULL,
+	FOREIGN KEY(denuncia_id) REFERENCES denuncias(id),
+	PRIMARY KEY(id)
+); 

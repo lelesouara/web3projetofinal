@@ -19,7 +19,7 @@
 		</td>
 		<td><?= substr($denuncia['Denuncia']['descricao'], 0, 40). "..."; ?></td>
 		<td>
-			<?= $this->Html->link('Editar', array('controller' => 'denuncias', 'action' => 'editar', $denuncia['Denuncia']['id']), array('class' => 'btn btn-primary')); ?>
+			<?= $this->Html->link('Editar', array('controller' => 'denuncias', 'action' => 'edit', $denuncia['Denuncia']['id']), array('class' => 'btn btn-primary')); ?>
 			&nbsp;
 			<?= $this->Form->postLink('Deletar', array('controller' => 'denuncias', 'action' => 'delete', $denuncia['Denuncia']['id']), array('class' => 'btn btn-danger'), "Deseja deletar esta denúncia?"); ?>
 		</td>

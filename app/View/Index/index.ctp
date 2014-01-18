@@ -7,7 +7,7 @@
 	<h2> <?= substr($denuncia['Denuncia']['descricao'], 0, 40). "..."; ?> </h2>
 	<p><?= $denuncia['User']['username']; ?> </p>
 	<div class='saibamais'>
-	<?= $this->Html->link('+', array('controller' => 'denuncias', 'action' => 'view', $denuncia['Denuncia']['id'])); ?>
+	<?= $this->Html->link('Saiba Mais', array('controller' => 'denuncias', 'action' => 'view', $denuncia['Denuncia']['id'])); ?>
 	</div>
 	<div class='apoiar'>
 	<?= $this->Html->link('Apoiar', array('controller' => 'denuncias', 'action' => 'apoiar', $denuncia['Denuncia']['id'])); ?>

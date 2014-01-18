@@ -14,5 +14,13 @@
 	</div>
 </div>
 <?php endforeach; ?>
-
+<div class='hack'></div>
+<?php
+/* Paginator Helper */
+echo "<div id='paginate-global'>";
+    echo "<div id='paginate-news'>".$this->Paginator->prev('« Mais novas', null, null, array('class' => 'desabilitado'))."</div>";
+    echo "<div id='paginate-numbers'>".$this->Paginator->numbers()."</div>";
+    echo "<div id='paginate-olders'>".$this->Paginator->next('Mais antigas »', null, null, array('class' => 'desabilitado'))."</div>";
+echo "</div>";
+?>
 <div class='hack'></div>

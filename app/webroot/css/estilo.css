@@ -222,3 +222,38 @@ body{
 	color: #fff;
 	text-shadow: 1px 1px .3px #942a2a; 
 }
+
+/* Pagination */
+#paginate-global{
+    width: 560px;
+    margin: auto;
+    padding: 10px;
+    height: 25px;
+}
+
+#paginate-news{
+    width: 150px;
+    height: auto;
+    float: left;
+    text-align: center;
+    text-transform: uppercase;
+    
+}
+
+#paginate-numbers{
+    width: 150px;
+    height: auto;
+    float: left;
+    text-align: center;
+    text-transform: uppercase;
+    
+}
+
+#paginate-olders{
+    width: 150px;
+    height: auto;
+    float: left;
+    text-align: center;
+    text-transform: uppercase;
+    
+}

@@ -11,7 +11,14 @@ class IndexController extends AppController{
 
 	public function index(){
 		$this->loadModel('Denuncia');
-		$denuncias = $this->Denuncia->find('all', array('limit' => 10, 'order' => 'Denuncia.id DESC'));
+                
+                $options = array(
+                    'order' => array('Denuncia.id DESC'),
+                    'limit' => 4
+                );
+                $this->paginate = $options;
+		$denuncias = $this->paginate("Denuncia");
+                
 		$this->set('ultimasDenuncias', $denuncias);
 	}
 

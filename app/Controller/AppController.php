@@ -40,7 +40,7 @@ class AppController extends Controller {
             'authError' => "<div class='alert alert-warning'>Você precisa estar <b>autenticado</b> para acessar esta página</div>",
             'authorize' => array('Controller') // Adicionamos essa linha
         )
-    );
+    ); 
 
     public function beforeFilter() {
         
